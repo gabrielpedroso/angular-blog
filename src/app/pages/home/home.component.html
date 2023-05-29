@@ -1,27 +1,27 @@
 <div class="container__home">
   <div class="home__content">
-    <app-photo-card></app-photo-card>
+    <app-photo-card
+      [description]="photoCard.description"
+      [title]="photoCard.title"
+      [photo]="photoCard.photo">
+    </app-photo-card>
     <div class="content__cards">
-      <app-big-card></app-big-card>
-      <app-big-card></app-big-card>
-      <app-big-card></app-big-card>
-      <app-big-card></app-big-card>
+      <app-big-card
+        *ngFor="let data of bigCard"
+        [photo]="data.photo"
+        [title]="data.title"
+        [description]="data.description">
+      </app-big-card>
     </div>
   </div>
   <div class="home__trending">
     <div class="trending__title">Trending News</div>
     <div class="trending__cards">
-      <app-small-card></app-small-card>
-      <app-small-card></app-small-card>
-      <app-small-card></app-small-card>
-      <app-small-card></app-small-card>
-      <app-small-card></app-small-card>
-      <app-small-card></app-small-card>
-      <app-small-card></app-small-card>
-      <app-small-card></app-small-card>
-      <app-small-card></app-small-card>
-      <app-small-card></app-small-card>
-      <app-small-card></app-small-card>
-      <app-small-card></app-small-card>
+      <app-small-card
+        *ngFor="let data of smallCard"
+        [photo]="data.photo"
+        [title]="data.title"
+        [description]="data.description">
+      </app-small-card>
     </div>
 </div>

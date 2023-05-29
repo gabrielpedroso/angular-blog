@@ -1,0 +1,32 @@
+.container__photo-card {
+  position: relative;
+  width: fit-content;
+}
+
+.photo-card__image {
+  height: 400px;
+  width: 800px;
+}
+
+.photo-card__image > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.photo-card__content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+}
+
+.photo-card__content > h4 {
+  color: #68676C;
+  margin-bottom: .5rem;
+}
+
+.photo-card__content > p {
+  color: #FFFFFF;
+  font-size: 24px;
+}

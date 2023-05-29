@@ -1,0 +1,28 @@
+.container__small-card {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.container__small-card > img {
+  max-width: 100px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.small-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.small-card__info > h4 {
+  color: #A0A9B4;
+  font-size: 12px;
+}
+
+.small-card__info > p {
+  color: #68676C;
+  font-weight: bold;
+  font-size: 14px;
+}
